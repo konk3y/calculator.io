@@ -1,21 +1,36 @@
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Фиксирует див, плюс не нужно подгонять каждый параметр, если они записаны в разных единицаз измерений + сбрасываем изначальные стили */
 }
 
-body {
-  margin: 0;
-}
+ body {
+    margin: 0; /* Велечина отсупа от каждого края элемента */
+    min-height: 100vh; /* минимальная высота элемента */
+    
+    display: flex;
+    justify-content: center; /*Чтобы все было в центре и было ровно */
+    align-items: center; 
+  }
+
 
 .All_button{
   width: 600px;
-  border: solid 2px #555;
+  border: solid 2px #9F3ED5;
   border-radius: 10px;
-  background-color: #888;
-  padding: 20px;
+  background-color: #7109AA;
+  padding: 20px; /* внутреняя граница блока */
 
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 2fr); /* устнавливаем для каждой кнопки одинаковый размер*/
   grid-auto-rows: 80px;
   gap: 20px; 
 }
 
+.output_result {
+    grid-column: 1 / -1;
+  
+    background-color: #AD66D5;
+    color: #48036F;
+    font-size: 56px;
+    padding: 10px;
+  
+}
