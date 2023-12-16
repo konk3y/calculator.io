@@ -30,7 +30,9 @@
  body {
     margin: 0; /* Велечина отсупа от каждого края элемента */
     min-height: 100vh; /* минимальная высота элемента */
-    
+    background: #3494e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #3494e6, #ec6ead); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #3494e6, #ec6ead); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     justify-content: center; /*Чтобы все было в центре и было ровно */
     align-items: center; 
